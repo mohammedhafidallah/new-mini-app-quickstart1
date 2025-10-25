@@ -1,10 +1,10 @@
 // minikit.config.ts
-// Farcaster Mini App manifest configuration
+// Farcaster Mini App configuration for Cubey
 
 const ROOT_URL = "https://new-mini-app-quickstart1.vercel.app";
 
 export const minikitConfig = {
-  // 👇 MUST be present in your live manifest
+  // 👇 Your Farcaster account association (these are your real values)
   accountAssociation: {
     header:
       "eyJmaWQiOjUzMTUyOCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDZENjc0MzhlZTY0Njk2RGY2NDA2MDk1ZWU4MTNjMzA4MDIyRDZENDEifQ",
@@ -14,7 +14,7 @@ export const minikitConfig = {
       "iKzs7lTppU+ykJcztNfOFKJS/RnwZ78T0gKM2Mi60dMDdBiz08r54p/ttKG6sDidDeqr+t1n0IymPFUbU81vTBs=",
   },
 
-  // 👇 Your Mini App display details
+  // 👇 Mini app metadata (this shows on Farcaster)
   miniapp: {
     version: "1",
     name: "Cubey",
@@ -32,7 +32,5 @@ export const minikitConfig = {
     ogImageUrl: `${ROOT_URL}/blue-hero.png`,
     ogTitle: "Cubey",
     ogDescription: "Your AI Ad Companion — built for Farcaster.",
-    // requiredChains: ["eip155:8453"],   // optional
-    // requiredChains: ["eip155:84532"],  // optional
   },
 } as const;
