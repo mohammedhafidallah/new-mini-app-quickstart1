@@ -1,31 +1,39 @@
 // minikit.config.ts
-const ROOT_URL = "https://new-mini-app-quickstart1.vercel.app"; // <-- make sure this matches your Vercel URL
+// Farcaster Mini App manifest configuration for your app
+
+const ROOT_URL = "https://new-mini-app-quickstart1.vercel.app"; // make sure this matches your live Vercel URL
 
 export const minikitConfig = {
+  // 👇 Account Association (your verified Farcaster signature)
   accountAssociation: {
-    header: "",     // we'll fill these in Step 3
-    payload: "",
-    signature: "",
+    header: "eyJmaWQiOjUzMTUyOCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDZENjc0MzhlZTY0Njk2RGY2NDA2MDk1ZWU4MTNjMzA4MDIyRDZENDEifQ",
+    payload: "eyJkb21haW4iOiJuZXctbWluaS1hcHAtcXVpY2tzdGFydDEudmVyY2VsLmFwcCJ9",
+    signature: "iKzs7lTppU+ykJcztNfOFKJS/RnwZ78T0gKM2Mi60dMDdBiz08r54p/ttKG6sDidDeqr+t1n0IymPFUbU81vTBs=",
   },
+
+  // 👇 Your mini app metadata (display details inside Farcaster)
   miniapp: {
     version: "1",
-    name: "Base Mini App Demo",
-    subtitle: "Built on Base • Works in Farcaster",
-    description: "A simple Farcaster Mini App running on the Base network.",
-    screenshotUrls: [`${ROOT_URL}/screenshot-portrait.png`],
+    name: "Cubey",
+    subtitle: "Your AI Ad Companion",
+    description: "Ads",
+    screenshotUrls: [
+      `${ROOT_URL}/screenshot-portrait.png`,
+    ],
     iconUrl: `${ROOT_URL}/blue-icon.png`,
     splashImageUrl: `${ROOT_URL}/blue-hero.png`,
     splashBackgroundColor: "#000000",
     homeUrl: ROOT_URL,
     webhookUrl: `${ROOT_URL}/api/webhook`,
     primaryCategory: "social",
-    tags: ["base", "miniapp"],
+    tags: ["marketing", "ads", "quickstart", "waitlist"],
     heroImageUrl: `${ROOT_URL}/blue-hero.png`,
-    tagline: "Your first Mini App on Base 🚀",
-    ogTitle: "Base Mini App Demo",
-    ogDescription: "Try Mini Apps on Base — fast, simple, and onchain.",
+    tagline: "Your first Mini App on Farcaster 🚀",
+    ogTitle: "Cubey",
+    ogDescription: "Your AI Ad Companion — built for Farcaster.",
     ogImageUrl: `${ROOT_URL}/blue-hero.png`,
-    // requiredChains: ["eip155:8453"],   // Base mainnet (optional)
-    // requiredChains: ["eip155:84532"],  // Base Sepolia (optional)
+    // Optional: specify Base chain if you later want to use onchain features
+    // requiredChains: ["eip155:8453"],   // Base mainnet
+    // requiredChains: ["eip155:84532"],  // Base Sepolia (testnet)
   },
 } as const;
