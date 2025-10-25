@@ -1,23 +1,17 @@
-const ROOT_URL =
-  process.env.NEXT_PUBLIC_URL ||
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000');
+// minikit.config.ts
+const ROOT_URL = "https://new-mini-app-quickstart1.vercel.app"; // <-- make sure this matches your Vercel URL
 
-/**
- * MiniApp configuration object. Must follow the Farcaster MiniApp specification.
- *
- * @see {@link https://miniapps.farcaster.xyz/docs/guides/publishing}
- */
 export const minikitConfig = {
   accountAssociation: {
-    header: "",
+    header: "",     // we'll fill these in Step 3
     payload: "",
-    signature: ""
+    signature: "",
   },
   miniapp: {
     version: "1",
-    name: "Cubey", 
-    subtitle: "Your AI Ad Companion", 
-    description: "Ads",
+    name: "Base Mini App Demo",
+    subtitle: "Built on Base • Works in Farcaster",
+    description: "A simple Farcaster Mini App running on the Base network.",
     screenshotUrls: [`${ROOT_URL}/screenshot-portrait.png`],
     iconUrl: `${ROOT_URL}/blue-icon.png`,
     splashImageUrl: `${ROOT_URL}/blue-hero.png`,
@@ -25,12 +19,13 @@ export const minikitConfig = {
     homeUrl: ROOT_URL,
     webhookUrl: `${ROOT_URL}/api/webhook`,
     primaryCategory: "social",
-    tags: ["marketing", "ads", "quickstart", "waitlist"],
-    heroImageUrl: `${ROOT_URL}/blue-hero.png`, 
-    tagline: "",
-    ogTitle: "",
-    ogDescription: "",
+    tags: ["base", "miniapp"],
+    heroImageUrl: `${ROOT_URL}/blue-hero.png`,
+    tagline: "Your first Mini App on Base 🚀",
+    ogTitle: "Base Mini App Demo",
+    ogDescription: "Try Mini Apps on Base — fast, simple, and onchain.",
     ogImageUrl: `${ROOT_URL}/blue-hero.png`,
+    // requiredChains: ["eip155:8453"],   // Base mainnet (optional)
+    // requiredChains: ["eip155:84532"],  // Base Sepolia (optional)
   },
 } as const;
-
