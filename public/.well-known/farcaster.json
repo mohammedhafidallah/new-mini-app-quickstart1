@@ -1,0 +1,25 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjUzMTUyOCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDZENjc0MzhlZTY0Njk2RGY2NDA2MDk1ZWU4MTNjMzA4MDIyRDZENDEifQ",
+    "payload": "eyJkb21haW4iOiJuZXctbWluaS1hcHAtcXVpY2tzdGFydDEudmVyY2VsLmFwcCJ9",
+    "signature": "iKzs7lTppU+ykJcztNfOFKJS/RnwZ78T0gKM2Mi60dMDdBiz08r54p/ttKG6sDidDeqr+t1n0IymPFUbU81vTBs="
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Cubey",
+    "subtitle": "Your AI Ad Companion",
+    "description": "Ads",
+    "screenshotUrls": [
+      "https://new-mini-app-quickstart1.vercel.app/screenshot-portrait.png"
+    ],
+    "iconUrl": "https://new-mini-app-quickstart1.vercel.app/blue-icon.png",
+    "splashImageUrl": "https://new-mini-app-quickstart1.vercel.app/blue-hero.png",
+    "splashBackgroundColor": "#000000",
+    "homeUrl": "https://new-mini-app-quickstart1.vercel.app",
+    "webhookUrl": "https://new-mini-app-quickstart1.vercel.app/api/webhook",
+    "primaryCategory": "social",
+    "tags": ["marketing", "ads", "quickstart", "waitlist"],
+    "heroImageUrl": "https://new-mini-app-quickstart1.vercel.app/blue-hero.png",
+    "ogImageUrl": "https://new-mini-app-quickstart1.vercel.app/blue-hero.png"
+  }
+}
